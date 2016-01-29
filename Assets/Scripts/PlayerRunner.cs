@@ -18,6 +18,12 @@ public class PlayerRunner : MonoBehaviour {
 	private bool mOnGround = false;
 
 	private Vector3 mVerticalVelocity = Vector3.zero;
+
+	public bool isOnAir {
+		get {
+			return !mOnGround;
+		}
+	}
 	
 	public void Jump() {
 		mVerticalVelocity = jumpVector;

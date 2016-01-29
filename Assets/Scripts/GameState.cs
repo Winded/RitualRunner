@@ -42,6 +42,10 @@ public class GameState : MonoBehaviour {
 		}
 	}
 
+	public void Restart() {
+		Application.LoadLevel (Application.loadedLevel);
+	}
+
 	void Awake() {
 		Game.State = this;
 		mCurrentState = GameStateEnum.Starting;
