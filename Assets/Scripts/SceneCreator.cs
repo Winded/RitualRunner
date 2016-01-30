@@ -19,7 +19,7 @@ public class SceneCreator : MonoBehaviour
 
 	public float randomOffet = 0.03f;
 
-	public int scale = 10;
+	public int scale = 1;
 
 	public int lenght = 60;
 	public SceneAsset asset;
