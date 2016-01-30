@@ -11,5 +11,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6cdaaf611bd29448341ed20de57ccf, type: 3}
   m_Name: MyScene
   m_EditorClassIdentifier: 
-  sceneObjects: []
-  dataObjects: []
+  clip: {fileID: 0}
+  sceneObjects:
+  - prefab: {fileID: 157284, guid: 96c991bd5a65e894b839e4e6f507f093, type: 2}
+    type: 0
+    customID: 0
+  - prefab: {fileID: 129358, guid: 01f3279daf795f448a2ed4353e3070d6, type: 2}
+    type: 1
+    customID: 0
+  - prefab: {fileID: 142322, guid: 56657da590fbe7546b5795fb807d76ae, type: 2}
+    type: 2
+    customID: 0
+  dataObjects:
+  - time: 0
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 6
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 29
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 36
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 44
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 58
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 66
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 74
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 88
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 104
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 119
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 126
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 134
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 0
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 14
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
