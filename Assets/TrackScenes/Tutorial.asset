@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6cdaaf611bd29448341ed20de57ccf, type: 3}
-  m_Name: MyScene
+  m_Name: Tutorial
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
   sceneObjects:
@@ -22,6 +22,9 @@ MonoBehaviour:
   - prefab: {fileID: 142322, guid: 56657da590fbe7546b5795fb807d76ae, type: 2}
     type: 2
     customID: 0
+  - prefab: {fileID: 157250, guid: 805176629c92e094098849a6fec11f4a, type: 2}
+    type: 4
+    customID: 1
   dataObjects:
   - time: 19
     range: 0
@@ -83,17 +86,12 @@ MonoBehaviour:
     type: 1
     customID: 0
     properties: []
-  - time: 184
+  - time: 183
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 214
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
+  - time: 213
     range: 0
     type: 1
     customID: 0
@@ -103,223 +101,73 @@ MonoBehaviour:
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 257
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 273
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 280
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 288
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 295
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 321
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 336
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 354
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 370
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 398
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 417
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 432
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 448
     range: 0
     type: 1
     customID: 0
     properties: []
-  - time: 0
+  - time: 470
     range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
-    properties: []
-  - time: 0
-    range: 0
-    type: 1
-    customID: 0
+    type: 4
+    customID: 1
     properties: []
