@@ -14,7 +14,6 @@ public class SceneCreator : MonoBehaviour
 		{
 			sceneCreator.LoadScene();
 
-
 //			AudioSource audio = sceneCreator.GetComponent<AudioSource>();
 //
 //			if(audio == null)
@@ -102,6 +101,15 @@ public class SceneCreator : MonoBehaviour
 
 					float offset = gobj.transform.localScale.x;
 
+					if(asset.ground != null && obj.type != SceneAsset.SceneObjectType.Hole)
+					{
+						for(int j = 1; j < 5; j++)
+						{
+							GameObject ground = GameObject.Instantiate(asset.ground, position + Vector2.down * offset * j, Quaternion.identity) as GameObject;
+							ground.transform.parent = gobj.transform;
+						}
+					}
+					
 					if(sprite != null)
 					{
 						offset = sprite.bounds.size.x;
