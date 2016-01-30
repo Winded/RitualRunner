@@ -35,7 +35,7 @@ public class SceneCreator : MonoBehaviour
 
 			if(source)
 			{
-				Debug.Log(source.time);
+				Debug.Log(source.time + " : " + source.time * asset.magicNumber);
 			}
 		}
 	}
@@ -46,7 +46,7 @@ public class SceneCreator : MonoBehaviour
 		Vector2 position = transform.position;
 		int time = -intro;
 
-		while (time < (asset != null ? (asset.clip != null ? asset.clip.length : length) : length) ) 
+		while (time < (asset != null ? (asset.clip != null ? asset.clip.length * asset.magicNumber : length) : length) ) 
 		{
 			time++;
 			
@@ -58,7 +58,7 @@ public class SceneCreator : MonoBehaviour
 			{
 				obj = asset.dataObjects[i];
 
-				if( time >= obj.time && time <= obj.time + obj.range)
+				if( time >= obj.time * asset.magicNumber && time <= obj.time * asset.magicNumber + obj.range)
 				{
 					prefab = FindObject(obj.type, obj.customID);
 					break;
