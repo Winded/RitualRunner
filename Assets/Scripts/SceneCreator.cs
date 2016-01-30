@@ -103,9 +103,9 @@ public class SceneCreator : MonoBehaviour
 
 					if(asset.ground != null && obj.type != SceneAsset.SceneObjectType.Hole)
 					{
-						for(int j = 1; j < 5; j++)
+						for(int j = 1; j < 10; j++)
 						{
-							GameObject ground = GameObject.Instantiate(asset.ground, position + Vector2.down * offset * j, Quaternion.identity) as GameObject;
+							GameObject ground = GameObject.Instantiate(asset.ground, position + Vector2.down * 0.64f * j, Quaternion.identity) as GameObject;
 							ground.transform.parent = gobj.transform;
 						}
 					}
