@@ -35,7 +35,7 @@ public class SceneCreator : MonoBehaviour
 
 			if(source)
 			{
-				Debug.Log((int)source.time);
+				Debug.Log(source.time);
 			}
 		}
 	}
