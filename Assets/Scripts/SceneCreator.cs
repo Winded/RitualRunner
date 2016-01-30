@@ -25,6 +25,21 @@ public class SceneCreator : MonoBehaviour
 
 	public int length = 60;
 	public SceneAsset asset;
+
+#if UNITY_EDITOR
+	private void Update()
+	{
+		if (Input.GetKeyDown (KeyCode.RightControl)) 
+		{
+			AudioSource source = GameObject.FindObjectOfType<AudioSource>();
+
+			if(source)
+			{
+				Debug.Log((int)source.time);
+			}
+		}
+	}
+#endif
 		
 	private void LoadScene()
 	{
