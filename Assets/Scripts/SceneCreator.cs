@@ -17,6 +17,8 @@ public class SceneCreator : MonoBehaviour
 	}
 #endif
 
+	public int intro = 10;
+
 	public float randomOffet = 0.03f;
 
 	public int scale = 1;
@@ -27,7 +29,7 @@ public class SceneCreator : MonoBehaviour
 	private void LoadScene()
 	{
 		Vector2 position = transform.position;
-		int time = 0;
+		int time = -intro;
 
 		while (time < lenght) 
 		{
