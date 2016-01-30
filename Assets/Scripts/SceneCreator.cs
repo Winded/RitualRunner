@@ -13,6 +13,25 @@ public class SceneCreator : MonoBehaviour
 		if (sceneCreator) 
 		{
 			sceneCreator.LoadScene();
+
+
+			AudioSource audio = sceneCreator.GetComponent<AudioSource>();
+
+			if(audio == null)
+			{
+				audio = sceneCreator.gameObject.AddComponent<AudioSource>();
+			}
+
+			audio.clip = sceneCreator.asset.clip;
+			audio.playOnAwake = true;
+			audio.Play();
+
+			AudioListener listener = sceneCreator.GetComponent<AudioListener>();
+
+			if(listener)
+			{
+				listener = sceneCreator.gameObject.AddComponent<AudioListener>();
+			}
 		}
 	}
 #endif
@@ -46,7 +65,9 @@ public class SceneCreator : MonoBehaviour
 		Vector2 position = transform.position;
 		int time = -intro;
 
-		while (time < (asset != null ? (asset.clip != null ? asset.clip.length * asset.magicNumber : length) : length) ) 
+		// while (time < (asset != null ? (asset.clip != null ? asset.clip.length * asset.magicNumber : length) : length) ) 
+
+		while(time < length)
 		{
 			time++;
 			
