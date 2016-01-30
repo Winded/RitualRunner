@@ -25,6 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 467492}
   - 61: {fileID: 6145142}
+  - 81: {fileID: 8105344}
   - 50: {fileID: 5015698}
   - 114: {fileID: 11423204}
   - 114: {fileID: 11422276}
@@ -216,6 +217,13 @@ BoxCollider2D:
   m_Offset: {x: .00169953704, y: 0}
   serializedVersion: 2
   m_Size: {x: .439149797, y: 1}
+--- !u!81 &8105344
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117026}
+  m_Enabled: 1
 --- !u!81 &8159358
 AudioListener:
   m_ObjectHideFlags: 1
@@ -271,8 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e777e9b7d037942a71b740b4ccfa31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
-  movementDirection: {x: 5, y: 0, z: 0}
+  movementSpeed: 5
+  movementDirection: {x: 1, y: 0, z: 0}
   gravityMultiplier: 1
   onGroundVerticalVelocity: {x: 0, y: -.100000001, z: 0}
   jumpVector: {x: 0, y: .5, z: 0}

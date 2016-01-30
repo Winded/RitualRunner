@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6cdaaf611bd29448341ed20de57ccf, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  magicNumber: 1
+  clip: {fileID: 8300000, guid: b92db0968ca4f7b4a9deba9893cb6621, type: 3}
   sceneObjects:
   - prefab: {fileID: 157284, guid: 96c991bd5a65e894b839e4e6f507f093, type: 2}
     type: 0

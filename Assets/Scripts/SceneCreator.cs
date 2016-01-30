@@ -15,23 +15,22 @@ public class SceneCreator : MonoBehaviour
 			sceneCreator.LoadScene();
 
 
-			AudioSource audio = sceneCreator.GetComponent<AudioSource>();
-
-			if(audio == null)
-			{
-				audio = sceneCreator.gameObject.AddComponent<AudioSource>();
-			}
-
-			audio.clip = sceneCreator.asset.clip;
-			audio.playOnAwake = true;
-			audio.Play();
-
-			AudioListener listener = sceneCreator.GetComponent<AudioListener>();
-
-			if(listener)
-			{
-				listener = sceneCreator.gameObject.AddComponent<AudioListener>();
-			}
+//			AudioSource audio = sceneCreator.GetComponent<AudioSource>();
+//
+//			if(audio == null)
+//			{
+//				audio = sceneCreator.gameObject.AddComponent<AudioSource>();
+//			}
+//
+//			audio.clip = sceneCreator.asset.clip;
+//			audio.playOnAwake = true;
+//
+//			AudioListener listener = sceneCreator.GetComponent<AudioListener>();
+//
+//			if(listener)
+//			{
+//				listener = sceneCreator.gameObject.AddComponent<AudioListener>();
+//			}
 		}
 	}
 #endif
@@ -48,15 +47,15 @@ public class SceneCreator : MonoBehaviour
 #if UNITY_EDITOR
 	private void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.RightControl)) 
-		{
-			AudioSource source = GameObject.FindObjectOfType<AudioSource>();
-
-			if(source)
-			{
-				Debug.Log(source.time + " : " + source.time * asset.magicNumber);
-			}
-		}
+//		if (Input.GetKeyDown (KeyCode.RightControl)) 
+//		{
+//			AudioSource source = GameObject.FindObjectOfType<AudioSource>();
+//
+//			if(source)
+//			{
+//				Debug.Log(source.time + " : " + source.time * asset.magicNumber);
+//			}
+//		}
 	}
 #endif
 		
