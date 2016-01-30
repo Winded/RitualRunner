@@ -23,7 +23,7 @@ public class SceneCreator : MonoBehaviour
 
 	public int scale = 1;
 
-	public int lenght = 60;
+	public int length = 60;
 	public SceneAsset asset;
 		
 	private void LoadScene()
@@ -31,7 +31,7 @@ public class SceneCreator : MonoBehaviour
 		Vector2 position = transform.position;
 		int time = -intro;
 
-		while (time < lenght) 
+		while (time < (asset != null ? (asset.clip != null ? asset.clip.length : length) : length) ) 
 		{
 			time++;
 			
