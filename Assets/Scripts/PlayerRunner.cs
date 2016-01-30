@@ -11,6 +11,7 @@ public class PlayerRunner : MonoBehaviour {
 	public Vector3 onGroundVerticalVelocity = Vector3.down;
 
 	public Vector3 jumpVector = Vector3.up;
+	public Vector3 dashVector = Vector3.down;
 
 	private CharacterController2D mController;
 
@@ -26,7 +27,15 @@ public class PlayerRunner : MonoBehaviour {
 	}
 	
 	public void Jump() {
-		mVerticalVelocity = jumpVector;
+		if (mOnGround) {
+			mVerticalVelocity = jumpVector;
+		}
+	}
+
+	public void Dash() {
+		if (!mOnGround) {
+			mVerticalVelocity = dashVector;
+		}
 	}
 
 	void Start () {
@@ -36,8 +45,11 @@ public class PlayerRunner : MonoBehaviour {
 
 	void Update () {
 		if (mRunning) {
-			if(mOnGround && Input.GetButtonDown("Jump")) {
+			if(Input.GetButtonDown("Jump")) {
 				Jump();
+			}
+			if(Input.GetButtonDown("Dash")) {
+				Dash ();
 			}
 			RunTick();
 		}
