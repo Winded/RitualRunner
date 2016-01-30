@@ -13,6 +13,8 @@ public class PlayerRunner : MonoBehaviour {
 	public Vector3 jumpVector = Vector3.up;
 	public Vector3 dashVector = Vector3.down;
 
+	public CameraJuice cameraJuice;
+
 	private CharacterController2D mController;
 
 	private bool mRunning = true;
@@ -29,6 +31,7 @@ public class PlayerRunner : MonoBehaviour {
 	public void Jump() {
 		if (mOnGround) {
 			mVerticalVelocity = jumpVector;
+			cameraJuice.DoJuicyStuff();
 		}
 	}
 
