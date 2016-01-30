@@ -18,7 +18,7 @@ public class Background : MonoBehaviour {
 	}
 
 	void StateChanged (GameStateEnum oldState, GameStateEnum newState) {
-		if (newState == GameStateEnum.GameOver) {
+		if (newState != GameStateEnum.Running) {
 			mMoving = false;
 		}
 	}
