@@ -28,7 +28,7 @@ public class SceneCreator : MonoBehaviour
 
 			AudioListener listener = sceneCreator.GetComponent<AudioListener>();
 
-			if(listener)
+			if(listener != null)
 			{
 				listener = sceneCreator.gameObject.AddComponent<AudioListener>();
 			}
