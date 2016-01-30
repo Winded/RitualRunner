@@ -26,10 +26,13 @@ MonoBehaviour:
   - prefab: {fileID: 157250, guid: 805176629c92e094098849a6fec11f4a, type: 2}
     type: 4
     customID: 1
+  - prefab: {fileID: 193368, guid: 02f7752d390d9184d9493018f3c711dc, type: 2}
+    type: 4
+    customID: 2
   dataObjects:
   - time: 19
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 27
@@ -54,7 +57,7 @@ MonoBehaviour:
     properties: []
   - time: 79
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 86
@@ -74,12 +77,12 @@ MonoBehaviour:
     properties: []
   - time: 138
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 153
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 168
@@ -109,7 +112,7 @@ MonoBehaviour:
     properties: []
   - time: 273
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 280
@@ -119,12 +122,12 @@ MonoBehaviour:
     properties: []
   - time: 288
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 295
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 321
@@ -159,7 +162,7 @@ MonoBehaviour:
     properties: []
   - time: 432
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 448
@@ -171,4 +174,163 @@ MonoBehaviour:
     range: 0
     type: 4
     customID: 1
+    properties: []
+  - time: 109
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 56
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 58
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 60
+    range: 0
+    type: 1
+    customID: 0
+    properties:
+    - type: 1
+      data: {x: 0, y: 2}
+  - time: 136
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 177
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 179
+    range: 0
+    type: 1
+    customID: 0
+    properties:
+    - type: 1
+      data: {x: 0, y: 2}
+  - time: 194
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 80
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 243
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 0
+    range: 0
+    type: 4
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
+    properties: []
+  - time: 45
+    range: 0
+    type: 1
+    customID: 0
     properties: []
