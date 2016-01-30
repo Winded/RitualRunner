@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   juiceSize: 4.5
+  juicePos: {x: 5, y: .111017697, z: -10}
 --- !u!114 &11422276
 MonoBehaviour:
   m_ObjectHideFlags: 1
