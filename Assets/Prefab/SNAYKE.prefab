@@ -11,9 +11,11 @@ GameObject:
   - 95: {fileID: 9552222}
   - 212: {fileID: 21207788}
   - 61: {fileID: 6196114}
-  m_Layer: 8
+  - 114: {fileID: 11486608}
+  - 114: {fileID: 11449162}
+  m_Layer: 11
   m_Name: SNAYKE
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.94000006, y: .239999995, z: 0}
+  m_LocalPosition: {x: 8.05000019, y: -1.15999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40,9 +42,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: .0599999987}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: .939999998, y: .340000004}
 --- !u!95 &9552222
 Animator:
   serializedVersion: 3
@@ -60,6 +62,37 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11449162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6b3126ecaff92489580bbb81fb5872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementDirection: {x: -1, y: 0, z: 0}
+  MovementSpeed: 1
+--- !u!114 &11486608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73cd91557a31a59438b8b9ec33812908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxStepHeight: .100000001
+  MaxSlopeAngle: 45
+  RaycastsPerSide: 10
+  RaycastSafeOffset: .00999999978
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 768
 --- !u!212 &21207788
 SpriteRenderer:
   m_ObjectHideFlags: 1

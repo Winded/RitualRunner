@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21233366}
   - 61: {fileID: 6197560}
   - 114: {fileID: 11416090}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Blood
   m_TagString: Untagged
   m_Icon: {fileID: 0}

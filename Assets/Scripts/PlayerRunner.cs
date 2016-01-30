@@ -14,7 +14,7 @@ public class PlayerRunner : MonoBehaviour {
 
 	private CharacterController2D mController;
 
-	private bool mRunning = false;
+	private bool mRunning = true;
 	private bool mOnGround = false;
 
 	private Vector3 mVerticalVelocity = Vector3.zero;
@@ -43,6 +43,12 @@ public class PlayerRunner : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter2D(Collision2D col) {
+		if (col.gameObject.tag == "Enemy") {
+			Game.State.ChangeState(GameStateEnum.GameOver);
+		}
+	}
+
 	void RunTick() {
 		mVerticalVelocity += (Vector3)Physics2D.gravity * gravityMultiplier * Time.deltaTime;
 
@@ -55,18 +61,13 @@ public class PlayerRunner : MonoBehaviour {
 		} else {
 			mOnGround = false;
 		}
-
+		
 		if ((flags & CharacterController2D.CollisionFlags.Right) == CharacterController2D.CollisionFlags.Right) {
 			Game.State.ChangeState(GameStateEnum.GameOver);
 		}
 	}
 
 	void StateChanged (GameStateEnum oldState, GameStateEnum newState) {
-		if (newState == GameStateEnum.GameOver) {
-			print ("YOU DUN GOOFED");
-			mRunning = false;
-		} else if (newState == GameStateEnum.Running) {
-			mRunning = true;
-		}
+		mRunning = newState == GameStateEnum.Running;
 	}
 }

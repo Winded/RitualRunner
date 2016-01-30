@@ -3,9 +3,9 @@ using System.Collections;
 using System;
 
 public enum GameStateEnum {
-	Starting,
 	Running,
-	GameOver
+	GameOver,
+	GameWon
 }
 
 public class GameState : MonoBehaviour {
@@ -30,14 +30,14 @@ public class GameState : MonoBehaviour {
 
 	public void ChangeState(string stateName) {
 		switch (stateName) {
-		case "Starting":
-			ChangeState(GameStateEnum.Starting);
-			break;
 		case "Running":
 			ChangeState(GameStateEnum.Running);
 			break;
 		case "GameOver":
 			ChangeState(GameStateEnum.GameOver);
+			break;
+		case "GameWon":
+			ChangeState(GameStateEnum.GameWon);
 			break;
 		}
 	}
@@ -48,7 +48,7 @@ public class GameState : MonoBehaviour {
 
 	void Awake() {
 		Game.State = this;
-		mCurrentState = GameStateEnum.Starting;
+		mCurrentState = GameStateEnum.Running;
 	}
 
 	void Start () {

@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 467492}
   - 61: {fileID: 6145142}
+  - 50: {fileID: 5015698}
   - 212: {fileID: 21205750}
   - 114: {fileID: 11423204}
   - 114: {fileID: 11422276}
@@ -34,7 +35,7 @@ GameObject:
   - 124: {fileID: 12471742}
   - 81: {fileID: 8159358}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,6 +100,22 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
+--- !u!50 &5015698
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117026}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!61 &6145142
 BoxCollider2D:
   m_ObjectHideFlags: 1
