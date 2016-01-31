@@ -2,14 +2,13 @@
 using System.Collections;
 
 public class PlayerAnimations : MonoBehaviour {
-	
-	public AudioClip deathSound;
-
 	private Animator mAnimator;
+	private AudioSource mAudio;
 	private PlayerRunner mRunner;
 
 	void Start() {
 		mAnimator = GetComponent<Animator> ();
+		mAudio = GetComponent<AudioSource> ();
 		mRunner = GetComponent<PlayerRunner> ();
 		Game.State.OnStateChanged += StateChanged;
 	}
@@ -21,7 +20,7 @@ public class PlayerAnimations : MonoBehaviour {
 	void StateChanged (GameStateEnum oldState, GameStateEnum newState) {
 		if (newState == GameStateEnum.GameOver) {
 			mAnimator.SetTrigger("Death");
-			AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position);
+			mAudio.Play();
 		}
 	}
 }
