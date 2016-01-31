@@ -46,6 +46,10 @@ public class GameState : MonoBehaviour {
 		Application.LoadLevel (Application.loadedLevel);
 	}
 
+	public void MainMenu() {
+		Application.LoadLevel (0);
+	}
+
 	void Awake() {
 		Game.State = this;
 		mCurrentState = GameStateEnum.Running;

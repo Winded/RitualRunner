@@ -85,6 +85,12 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &191683857 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11495170, guid: c50f08a0df977b34490ffe4aeb1e52a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2121191571}
+  m_Script: {fileID: 11500000, guid: 41d6582f76a40e043b0a30e356aa807d, type: 3}
 --- !u!4 &277174545 stripped
 Transform:
   m_PrefabParentObject: {fileID: 405758, guid: eb2492dbf33d3974ba0f68c6b22989b7, type: 2}
@@ -415,6 +421,38 @@ Prefab:
     - target: {fileID: 22418052, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11479626, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191683857}
+    - target: {fileID: 11479626, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460740, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191683857}
+    - target: {fileID: 11460740, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468360, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191683857}
+    - target: {fileID: 11468360, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422162, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191683857}
+    - target: {fileID: 11422162, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e68e163067cf5fb4c87e1fd8c22f2f6d, type: 2}
