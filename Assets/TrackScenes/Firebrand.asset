@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6cdaaf611bd29448341ed20de57ccf, type: 3}
   m_Name: Firebrand
   m_EditorClassIdentifier: 
-  ground: {fileID: 0}
+  ground: {fileID: 128938, guid: 2d19e90857863214aa8ce19eb1955b14, type: 2}
   magicNumber: 1
   clip: {fileID: 8300000, guid: f52df29d400976245845bd8a26e5b042, type: 3}
   sceneObjects:
