@@ -53,8 +53,43 @@ MonoBehaviour:
     properties:
     - type: 0
       data: {x: 2, y: 1}
-  - time: 0
-    range: 0
+  - time: 148
+    range: 2
+    type: 2
+    customID: 0
+    properties:
+    - type: 0
+      data: {x: 2, y: 1}
+  - time: 191
+    range: 14
+    type: 2
+    customID: 0
+    properties:
+    - type: 0
+      data: {x: 2, y: 1}
+  - time: 226
+    range: 19
+    type: 2
+    customID: 0
+    properties:
+    - type: 0
+      data: {x: 2, y: 1}
+  - time: 160
+    range: 2
+    type: 1
+    customID: 0
+    properties:
+    - type: 0
+      data: {x: 2, y: 1}
+  - time: 160
+    range: 2
+    type: 1
+    customID: 0
+    properties:
+    - type: 0
+      data: {x: 2, y: 1}
+  - time: 160
+    range: 2
     type: 1
     customID: 0
     properties:
