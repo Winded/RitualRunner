@@ -19,8 +19,10 @@ public class PlayerAnimations : MonoBehaviour {
 	
 	void StateChanged (GameStateEnum oldState, GameStateEnum newState) {
 		if (newState == GameStateEnum.GameOver) {
-			mAnimator.SetTrigger("Death");
-			mAudio.Play();
+			mAnimator.SetTrigger ("Death");
+			mAudio.Play ();
+		} else if (newState == GameStateEnum.GameWon) {
+			mAnimator.SetTrigger("Win");
 		}
 	}
 }
