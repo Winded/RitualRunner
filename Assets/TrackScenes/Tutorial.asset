@@ -205,12 +205,12 @@ MonoBehaviour:
     properties: []
   - time: 177
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties: []
   - time: 179
     range: 0
-    type: 1
+    type: 2
     customID: 0
     properties:
     - type: 1
