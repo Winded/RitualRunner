@@ -7,9 +7,11 @@ public class Monster : MonoBehaviour {
 
 	private float xOffset;
 	private bool mChasing = true;
+	private Animator mAnimator;
 
 	void Start() {
 		xOffset = (transform.position - player.position).x;
+		mAnimator = GetComponent<Animator> ();
 		Game.State.OnStateChanged += StateChanged;
 	}
 
@@ -26,6 +28,7 @@ public class Monster : MonoBehaviour {
 	void StateChanged (GameStateEnum oldState, GameStateEnum newState) {
 		if (newState == GameStateEnum.GameOver) {
 			mChasing = false;
+			mAnimator.Play("Win");
 		}
 	}
 }
